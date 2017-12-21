@@ -1,0 +1,36 @@
+p{color:#343434}
+
+.col-md-6{
+  //border: 1px solid red;
+  height: 300px;
+  margin-bottom: 16px;
+}
+
+.container{
+  width:100%;
+}
+
+img{
+  width:inherit;
+  height:inherit;
+}
+
+h3:hover{
+  text-decoration: underline;
+}
+
+a{
+  letter-spacing: 2px;
+  color:black !important;
+}
+
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: red !important;
+}
+
+
+footer{
+  padding: 54px 0px 64px 0px;
+  word-spacing: 32px;
+}
