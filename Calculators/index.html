@@ -24,6 +24,7 @@
     <!--CALCULATOR-->
       <div class="form-group col-md-3">
         <h1>Calculator</h1>
+        <p>Compute two values</p>
         <form>
           <label>X</label>
           <input class="form-control" id="x" name="x" type="text"><br>
@@ -43,6 +44,7 @@
       <!--CONCATENATOR-->
       <div class="form-group col-md-3">
         <h1>Concatenator</h1>
+        <p>Join two strings</p>
         <form>
           <label>S1</label>
           <input class="form-control" id="s1" name="s1" type="text"><br>
@@ -57,6 +59,7 @@
       <!--CONVERTER-->
       <div class="form-group col-md-3">
         <h1>Converter</h1>
+        <p>Temperature converter</p>
         <form>
           <label>Temperature</label>
           <input class="form-control" id="temp" name="temp" type="text">
@@ -67,19 +70,20 @@
       </div>
       <!--END CONVERTER-->
       
-      <!--UNKNOWN-->
+      <!--Fuzzy-->
       <div class="form-group col-md-3">
-        <h1>UNKNOWN</h1>
+        <h1>Fuzzy</h1>
+        <p>Not true or false, but a degree of truth and falseness.</p>
         <form>
-          <label>X</label>
-          <input class="form-control" id="x" name="x" type="text"><br>
-          <label>Y</label>
-          <input class="form-control" id="y" name="y" type="text">
-          <input  class="btn btn-primary" type="submit" onclick="x(); return false;" value="XXX">
-          <input class="btn btn-warning" type="submit" onclick="x(); return false;" value="XXXXXX">
-          <input class="btn btn-danger" type="submit" onclick="x(); return false;" value="XXX">
+          <label>Minimum</label>
+          <input class="form-control" id="min" name="min" type="text"><br>
+          <label>Value</label>
+          <input class="form-control" id="val" name="val" type="text">
+          <label>Maximum</label>
+          <input class="form-control" id="max" name="max" type="text">
+          <input  class="btn btn-primary" type="submit" onclick="membership(); return false;" value="Membership">
         </form>
-        <h3 id="unknown"></h3>
+        <h3 id="membership"></h3>
       </div>
       <!--END UNKOWN-->
 
