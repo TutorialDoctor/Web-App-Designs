@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculators</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  
+   
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body id="body">
+  <div align="center" class="container">
+    <div class="row">
+    <!--CALCULATOR-->
+      <div class="form-group col-md-3">
+        <h1>Calculator</h1>
+        <form>
+          <label>X</label>
+          <input class="form-control" id="x" name="x" type="text"><br>
+          <label>Y</label>
+          <input class="form-control" id="y" name="y" type="text">
+          <input  class="btn btn-primary" type="submit" onclick="add(); return false;" value="Add">
+          <input class="btn btn-warning" type="submit" onclick="subtract(); return false;" value="Subtract">
+          <input class="btn btn-danger" type="submit" onclick="multiply(); return false;" value="Multiply">
+          <input  class="btn btn-success" type="submit" onclick="divide(); return false;" value="Divide">
+          <input  class="btn btn-warning" type="submit" onclick="remainder(); return false;" value="Remainder">
+          <input class="btn btn-primary" type="submit" onclick="power(); return false;" value="Power">
+        </form>
+        <h3 id="output"></h3>
+      </div>
+      <!--END CALCULATOR-->
+ 
+      <!--CONCATENATOR-->
+      <div class="form-group col-md-3">
+        <h1>Concatenator</h1>
+        <form>
+          <label>S1</label>
+          <input class="form-control" id="s1" name="s1" type="text"><br>
+          <label>S2</label>
+          <input class="form-control" id="s2" name="s2" type="text">
+          <input  class="btn btn-danger" type="submit" onclick="concat(); return false;" value="Concat">
+        </form>
+        <h3 id="concatch"></h3>
+      </div>
+      <!--END CONCATENATOR-->
+      
+      <!--CONVERTER-->
+      <div class="form-group col-md-3">
+        <h1>Converter</h1>
+        <form>
+          <label>Temperature</label>
+          <input class="form-control" id="temp" name="temp" type="text">
+          <input  class="btn btn-primary" type="submit" onclick="dToC(); return false;" value="Degrees To Celcius">
+          <input class="btn btn-warning" type="submit" onclick="cToD(); return false;" value="Celcius To Degrees">
+        </form>
+        <h3 id="temperature"></h3>
+      </div>
+      <!--END CONVERTER-->
+      
+      <!--UNKNOWN-->
+      <div class="form-group col-md-3">
+        <h1>UNKNOWN</h1>
+        <form>
+          <label>X</label>
+          <input class="form-control" id="x" name="x" type="text"><br>
+          <label>Y</label>
+          <input class="form-control" id="y" name="y" type="text">
+          <input  class="btn btn-primary" type="submit" onclick="x(); return false;" value="XXX">
+          <input class="btn btn-warning" type="submit" onclick="x(); return false;" value="XXXXXX">
+          <input class="btn btn-danger" type="submit" onclick="x(); return false;" value="XXX">
+        </form>
+        <h3 id="unknown"></h3>
+      </div>
+      <!--END UNKOWN-->
+
+      </div>
+  </div>
+  
+</body>
+  
+</html>

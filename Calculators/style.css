@@ -1,0 +1,15 @@
+#output{
+  padding-top:1em;
+  width:100%;
+  text-align: center
+}
+
+.form-group{
+  width:100%
+}
+
+input{
+  margin-top:16px !important;
+  width:100% !important;
+}
+
