@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Easy Chat</title>
+</head>
+
+<!--ADD THE CONTENT-->
+<body>
+  <div id="container">
+    <h1 id="title">Easy Chat</h1>
+    <h4 id="subtext">A one-page chat.</h4>
+    <textarea id="para">Hello. My name is same. What is your name?</textarea><br><br>
+    <button id="btn" type="button" onclick="do_something()">Send</button>
+    <br><br><br>
+    <div id="empty"></div>
+  </div>
+</body>
+<!--END OF THE CONTENT-->
+  
+  
+<!--STYLE THE CODE-->
+<style>
+#container{
+  width: 50%;
+  margin: auto;
+  padding: 12px;
+  font-family: sans-serif
+}
+#btn{
+  font-size: 24px;
+  border-radius: 4px;
+}
+#para{
+  width:90%;
+  height:72px;
+  padding: 12px;
+  border: 1px solid blue !important;
+  box-shadow: 0 0 3px blue !important;
+  font-size: 18px;
+}
+</style>
+<!-- END OF STYLES-->
+  
+
+<!--MAKE IT INTERACTIVE-->
+<script>
+title = document.getElementById("title");
+subtext = document.getElementById("subtext");
+btn = document.getElementById("btn");
+empty = document.getElementById("empty");
+
+function do_something(){
+  para = document.getElementById("para").value;
+  empty.innerHTML += para + "<br><br>"
+}
+</script>
+<!-- END OF INTERACTIVITY-->
+  
+</html>
